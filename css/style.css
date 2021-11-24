@@ -1,0 +1,101 @@
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper1 {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "he na lo na he"
+    "al ma lo ma ar"
+    "al ma ma ma ar"
+    "al ma ma ma ar"
+    "fo fo fo fo fo"
+  ;
+}
+
+header {
+  grid-area: he;
+  background: brown;
+}
+
+nav {
+  grid-area: na;
+  background: crimson;
+  
+  #Meny {
+    grid-area: a2;
+    background: deeppink;
+  }
+  
+  #Om_oss {
+    grid-area: a3;
+    background: firebrick;
+  }
+  
+  #Hem {
+    grid-area: a4;
+    background: green;
+  }
+}
+
+#left_side {
+  grid-area: al;
+  background: darkmagenta;
+}
+
+#right_side {
+  grid-area: ar;
+  background: darkviolet;
+}
+
+
+#main_article {
+  grid-area: a5;
+  background: hotpink;
+}
+
+
+footer {
+  grid-area: fo;
+  background: lightslategray;
+}
+
+/* #wrapper_2 {
+  
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "div1 div2"
+    "div3 div4"
+  ;
+}
+
+#div_1 {
+  grid-area: div1;
+  background: forestgreen;
+}
+
+#div_2 {
+  grid-area: div2;
+  background: forestgreen;
+}
+
+#div_3 {
+  grid-area: div3;
+  background: forestgreen;
+}
+
+#div_4 {
+  grid-area: div4;
+  background: forestgreen;
+} */
