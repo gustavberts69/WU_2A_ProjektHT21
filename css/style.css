@@ -5,18 +5,20 @@
   box-sizing: border-box;
 }
 
+
+
 #wrapper1 {
   width: 100vw;
   height: 100vh;
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-    "he na lo na he"
-    "al ma lo ma ar"
-    "al ma ma ma ar"
-    "al ma ma ma ar"
+    "he he he he he "
+    "ls ma ma ma rs"
+    "ls ma ma ma rs"
+    "ls ma ma ma rs"
     "fo fo fo fo fo"
   ;
 }
@@ -27,75 +29,60 @@ header {
 }
 
 nav {
-  grid-area: na;
-  background: crimson;
-  
-  #Meny {
-    grid-area: a2;
-    background: deeppink;
-  }
-  
-  #Om_oss {
-    grid-area: a3;
-    background: firebrick;
-  }
-  
-  #Hem {
-    grid-area: a4;
-    background: green;
-  }
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+}
+
+#logga {
+  display: flex;
+}
+
+#nav_left {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  height: 10vh;
+}
+
+#nav_right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  height: 10vh;
+}
+
+.navigation {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  background: cadetblue;
+  justify-content: space-evenly;
+  align-items: center;
+  border-style: groove;
+  border-width: 10px;
+  border-color: darkturquoise;
+  border-radius: 10%;
+
 }
 
 #left_side {
-  grid-area: al;
+  grid-area: ls;
   background: darkmagenta;
 }
 
 #right_side {
-  grid-area: ar;
+  grid-area: rs;
   background: darkviolet;
 }
 
 
 #main_article {
-  grid-area: a5;
+  grid-area: ma;
   background: hotpink;
 }
-
 
 footer {
   grid-area: fo;
   background: lightslategray;
 }
-
-/* #wrapper_2 {
-  
-  display: grid;
-  
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "div1 div2"
-    "div3 div4"
-  ;
-}
-
-#div_1 {
-  grid-area: div1;
-  background: forestgreen;
-}
-
-#div_2 {
-  grid-area: div2;
-  background: forestgreen;
-}
-
-#div_3 {
-  grid-area: div3;
-  background: forestgreen;
-}
-
-#div_4 {
-  grid-area: div4;
-  background: forestgreen;
-} */
