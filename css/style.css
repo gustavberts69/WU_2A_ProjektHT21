@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Neonderthaw&display=swap');
 * {
   margin: 0; 
   padding: 0;
@@ -6,83 +6,170 @@
 }
 
 
+:root {
+  /*========== Colors ==========*/
+  --first-color: #069C54;
+  --first-color-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #A6A6A6;
+  --body-color: #FFEBCD;
+  --container-color: #FFFFFF;
+}
 
-#wrapper1 {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-    "he he he he he "
-    "ls ma ma ma rs"
-    "ls ma ma ma rs"
-    "ls ma ma ma rs"
-    "fo fo fo fo fo"
-  ;
+body{
+  margin: 3rem;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 header {
-  grid-area: he;
-  background: brown;
+  height: 7rem;
+  background-color: var(--first-color);
+  border-radius: 10px;
 }
 
-nav {
-  display: flex;
-  width: 100vw;
-  height: 10vh;
+a {
+  text-decoration: none;
+  color: grey;
 }
-
-#logga {
+/*============ HEADER ============*/
+.nav-container {
   display: flex;
-}
-
-#nav_left {
-  display: flex;
-  justify-content: space-evenly;
-  width: 40vw;
-  height: 10vh;
-}
-
-#nav_right {
-  display: flex;
-  justify-content: space-evenly;
-  width: 40vw;
-  height: 10vh;
-}
-
-.navigation {
-  display: flex;
-  height: 50px;
-  width: 100px;
-  background: cadetblue;
+  max-width: 1024px;
+  height: 3rem;
   justify-content: space-evenly;
   align-items: center;
-  border-style: groove;
-  border-width: 10px;
-  border-color: darkturquoise;
-  border-radius: 10%;
-
+  border-radius: 10px;
 }
 
-#left_side {
-  grid-area: ls;
-  background: darkmagenta;
+.logo {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
 }
 
-#right_side {
-  grid-area: rs;
-  background: darkviolet;
+.nav_menu {
+  background-color: var(--body-color);
+  text-align: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  border-radius: 10px;
 }
 
-
-#main_article {
-  grid-area: ma;
-  background: hotpink;
+.nav_item {
+  margin: 3rem;
 }
 
-footer {
-  grid-area: fo;
-  background: lightslategray;
+.nav_list {
+  display: flex;
+  list-style-type: none;
+}
+
+/*============ HEM ============*/
+.home_container {
+  background-image: url("/img/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg");
+  background-size: 100%;
+  height: 782px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1rem;
+}
+
+.infobox {
+  height: auto;
+  width: 50%;
+  margin-top: 4rem;
+  text-align: center;
+  background-color: rgba(228, 225, 248, 0.8);
+  border-radius: 0.5rem;
+}
+
+.home_title {
+  color: var(--title-color);
+}
+
+.home_subtitle {
+  color: var(--title-color);
+}
+
+/*============ KONTAKTA ============*/
+.contact_container {
+  text-align: center;
+}
+
+.contact_description {
+  margin-bottom: 3rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #FFFFFF;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+  margin-bottom: 3rem;
+}
+
+/*============ FOOTER ============*/
+#footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: beige;
+}
+
+/*============ MENU GRID ============*/
+.menu_container {
+  display: grid;
+  height: 76vh;
+  width: 60vw;
+  grid-template-columns: 38vh 38vh;
+  grid-template-rows: 30vw 30vw;
+  grid-template-areas: 
+  "mi1 me1"
+  "mi2 me2"
+  ;
+}
+#menu {
+  grid-area: me1;
+}
+
+#menu1 {
+  grid-area: me2;
+}
+
+#menu_img {
+  grid-area: mi1;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#menu_img1 {
+  grid-area: mi2;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  height: 757px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/steve-harvey-Bv4ImkwctlY-unsplash.jpg");
+  background-size: 100%;
 }
