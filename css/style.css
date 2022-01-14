@@ -13,7 +13,7 @@
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
-  --body-color: #FFEBCD;
+  --body-color: #DEB887;
   --container-color: #FFFFFF;
 }
 
@@ -85,6 +85,18 @@ a {
   border: 1rem;
 }
 
+.home_container2 {
+  background-image: url("/img/createtravel-tv-nZ_bhPUW5UQ-unsplash.jpg");
+  background-size: 100%;
+  height: 782px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1rem;
+}
+
 .infobox {
   height: auto;
   width: 50%;
@@ -132,39 +144,51 @@ a {
 /*============ MENU GRID ============*/
 .menu_container {
   display: grid;
+  align-content: center;
+  justify-content: center;
   height: 76vh;
   width: 60vw;
-  grid-template-columns: 38vh 38vh;
-  grid-template-rows: 30vw 30vw;
+  grid-template-columns: 35vh 30vh;
+  grid-template-rows: 12vw 20vw;
   grid-template-areas: 
   "mi1 me1"
-  "mi2 me2"
+  "mi2 me1"
   ;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 60px;
 }
 #menu {
   grid-area: me1;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-#menu1 {
-  grid-area: me2;
+.menu_item {
+  margin-bottom: 2rem;
 }
 
 #menu_img {
+  border-radius: 50px;
   grid-area: mi1;
   object-fit: contain;
   width: 100%;
   height: 100%;
+  background-size: 100%;
+  background-image: url("/img/damir-spanic-7cPVUSEppWU-unsplash.jpg");
 }
 
 #menu_img1 {
+  border-radius: 50px;
   grid-area: mi2;
   object-fit: contain;
   width: 100%;
   height: 100%;
+  background-size: 100%;
+  background-image: url("/img/max-griss-xVgE_mCA8fk-unsplash.jpg");
 }
 
 .wrapper {
-  height: 757px;
+  height: 100%;
   max-width: 100%;
   display: flex;
   justify-content: center;
